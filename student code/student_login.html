@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User Login</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <!--jQuery library--> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--Latest compiled and minified JavaScript--> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .top_margin{
+                margin-top:20px;
+            }
+		
+        </style>
+		<script type="text/javascript">
+		function checkblanck()
+		{ if(document.getElementById('email').value= ""){
+		alert('plse enter your emailid');
+		return (false);
+		  document.getElementById('name').style.bordercolor='red';  } 
+		
+		  if(document.getElementById('password').value= ""){
+		alert('plse enter your id');
+		return (false);
+		  document.getElementById('name').style.bordercolor='red';  } }
+         </script>
+		
+		
+		
+    </head>t
+
+<body>
+    <div class="container">
+        <div class="row top_margin">
+            <div class="col-xs-6 col-xs-offset-3">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">student Login</div>
+                    <div class="panel-body">
+                        <form method="POST" action="student _login_script.php" onsubmit="return checkblanck()">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email">
+                            </div>
+							<div class="form-group">
+                                <label for="password">Student id</label>
+                                <input type="password" class="form-control" id="id" name="id">
+                            </div>
+                            <button type="submit"  value=”submit”>Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

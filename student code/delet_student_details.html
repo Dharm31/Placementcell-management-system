@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User Registration</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <!--jQuery library--> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--Latest compiled and minified JavaScript--> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="/javascript">
+			functionisNumberkey(evt)
+			{
+				varcharCode=(evt.whichj)?evt.which:eventkeyCode
+				if(charCode>31&&(charCode<46||charCode>57||charCode==47)
+				return false;
+				return true;
+			}
+		</script>
+		<script type="text/javascript">
+			functionisNumberString(evt)
+			{
+				varcharCode>=48&&charCode<=57)return false;
+				return true;
+			}
+		</script>
+		<script type="text/javascript">
+		function checkblanck()
+		{ 
+		 if(document.getElementById('studentid').value== ""){
+		alert('plse enter your id');
+		return (false);
+		  document.getElementById('studentid').style.bordercolor='red';  }
+		  
+		}
+		</script>
+	
+		<style type="text/css">
+		.row
+		{ 
+			background-color:black;
+			font-size:20pt;
+			color:white;
+		}
+		.row1
+		{
+			color:black;
+		}
+		</style>
+    </head>
+	<body background="student_information.jpg">
+		<form  method="POST"  action="delet_student_details_script.php" onsubmit="return checkblanck()">
+				<center class="row">DELET THE INFORMATION OF STUDENT GIVEN BELOW</center>
+				<table>
+					<
+					<tr>
+						<td class="row1"><b>ENTER THE STUDENTID:<b></td>
+						<td><input id="studentid"name="student"onekeypress="returnisNumberKey(event)"type="text"size="12"></td>
+						<td class="row1">(number only)</td>
+					</tr>
+					
+					
+					</table>
+				
+			</t></t><input type="submit" name="submit" value="submit"/>
+			<a href="userportal.html"><input type="button" name="up " value="HOME"> </a>
+			</t></t><input type="RESET" name="reset" value="RESET"/>
+			
+		</form>
+	</body>
+</html>

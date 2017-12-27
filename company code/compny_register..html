@@ -1,0 +1,155 @@
+
+<html>
+       <head>
+	         <script type="text/javascript">
+                  functionisNumberKey(evt)
+                  { varcharCode=(evt.which)?evt.which :event.keyCode
+                   if(charCode>31 &&(charCode<46||charCode>57||charCode==47))
+                   return false;
+                     return true;
+                      }   
+			  </script>
+               <script type="text/javascript">
+                 functionsNumberString(evt)
+                     {    
+                         varcharCode=(evt.which)?evt.which:event.keyCode
+                            if(charCode>=48 && charCod<=57)
+                               return false;
+                                return true;
+}
+                                   </script>
+                                     <title>insert company detail</title>
+                                    <style type="text/css">
+                                      .row{ 
+			                             background-color:black;
+	                             		font-size:20pt;
+			                          color:white;
+		                                     }
+		                               .row1{
+			                           color:black;
+		                                   }
+                                       </style>
+				</script>
+		<script type="text/javascript">
+		function checkblanck()
+		{ if(document.getElementById('name').value== ""){
+		alert('plse enter your name');
+		return (false);
+		  document.getElementById('name').style.bordercolor='red';  }
+		
+		  
+		  else if(document.getElementById('companyid').value== ""){
+		alert('plse enter your id');
+		return (false);
+		  document.getElementById('companyid').style.bordercolor='red';  }
+		  
+		  
+		  
+		  
+		  
+		 else  if(document.getElementById('btech').value==0){
+		alert('plse enter your b.tech mark');
+		return (false);
+		  document.getElementById('btech').style.bordercolor='red';  }
+		  
+		 else if(document.getElementById('tenth').value==0){
+		alert('plse enter your tenth mark');
+		return (false);
+		  document.getElementById('tenth').style.bordercolor='red';  }
+		 else if(document.getElementById('twelth').value==0){
+		alert('plse enter your twelth mark');
+		return (false);
+		  document.getElementById('twelth').style.bordercolor='red';  }					   
+			}
+		</script>						   
+									   
+        </head>
+       <body background="cusat1.jpg">
+         <form action="company_register.php" method="POST">
+                <center class="row">FILL GIVEN COMPANY DETAIL</center>  
+           <table>
+             <tr>
+                    <td class="row1">NAME:</td><td><input id="companyid" name="name" onkeypress="return isNumberString(event)" type="text"size="5"></td><td class="row1">(character only)</td></tr>
+
+                       <tr>
+                             <td class="row1">COMPANYID:</td><td><input id="companyid" name="id" onkeypress="return isNumberkey(event)" type="text"size="5"></td><td class="row1">(character only)</td></tr>
+
+                                       <td class="row1">STATUS:</td><td><input id="status" name="status" onkeypress="return isNumberkey(event)" type="text"size="5"></td><td class="row1">(character only)</td></tr>
+
+<tr>
+<td class="row1">PACKAGE:</td><td><input id="package" name="package" onkeypress="return isNumberKey(event)" type="text"size="12"></td><td class="row1">(numbers only)</td></tr>
+
+<tr>
+<td class="row1">BOND:</td><td><input id="bond" name="bond" onkeypress="return isNumberKey(event)" type="text"size="3"></td><td class="row1">(numbers only)</td></tr>
+<tr></tr>
+
+<tr>
+<td class="row1">VISITING PLACE:</td><td><textarea name="vp" rows="6" cols="30"></textarea></td></tr>
+
+<tr>
+<td class="row1">DATE OF VISIT:</td><td><input  name="dov" type="text" size="12"></td><td class="row1">(yy/mm/dd)</td></tr>
+
+<tr>
+
+
+<tr>
+<td class="row1">TENTH%:</td><td><input id="tenth" name="tenth"  onkeypress="return isNumberKey(event)" type="text" size="12"></td><td class="row1">(numbers only)</td></tr>
+
+<tr>
+<td class="row1">TWELTH%:</td><td><input id="twelth" name="twelth"  onkeypress="return isNumberKey(event)" type="text" size="12"></td><td class="row1">(numbers only)</td></tr>
+
+
+<tr>
+<td class="row1">BTECH%:</td><td><input id="betch" name="btech"  onkeypress="return isNumberKey(event)" type="text" size="12"></td><td class="row1">(numbers only)</td></tr>
+
+<tr>
+<td class="row1">YEAR GAP:</td><td><input id="gap" name="gap"  onkeypress="return isNumberKey(event)" type="text" size="12"></td><td class="row1">(numbers only)</td></tr>
+
+<tr>
+<td class="row1">ELIGIBLE BRANCH:</td><td>
+<select name="branch">
+<option>  </option>
+<option>other</option>
+<option>information technology</option>
+<option>computerscince</option>
+<option>machenical engg</option>
+<option>computer science</option>
+<option>electrical engg</option>
+<option>civil</option>
+<option>mechanical</option>
+<option>electrical and electronics</option>
+<option>instrumentaion</option>
+<option>safety fire</option>
+<option>ship tech</option>
+<option>marine</option>
+<option>polymer</option>
+<option>mca</option>
+<option>m.tech</option>
+</select>
+</tr>
+<tr>
+
+<td class="row1">NUMBER OF SUPPLY:</td><td><input id="supply" name="supply"  onkeypress="return isNumberKey(event)" type="text" size="12"></td><td class="row1">(numbers only)</td></tr>
+
+</tr>
+</table>
+<center>
+<input type="submit" name="submit" value="submit"/></center>
+</form>
+<table>
+<tr>
+<td width="1800">
+<a href="home.php">
+<a href="userportal.html"><input type="button" name="up " value="home"> </a>
+</td>
+
+<td width="1800">
+<a href="compny_register..html">
+<input type="button" name="reset" value="reset"/></a></td>
+
+<td>
+<a href="student _fetch_details.php">
+<input type="button" name="back" value="back"/></a></td>
+</table>
+</body>
+</html>
